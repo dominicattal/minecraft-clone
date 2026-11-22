@@ -11,7 +11,7 @@ struct VBO
 
 typedef struct VBO VBO;
 
-VBO vbo_init();
+VBO vbo_init(GLenum type);
 void vbo_bind(VBO vbo);
 void vbo_buffer(VBO vbo, u32 size, void* data);
 
