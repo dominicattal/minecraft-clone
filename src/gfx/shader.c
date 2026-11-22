@@ -12,6 +12,7 @@ static const char* _read_file(char* path)
     content = calloc(1, len);
     assert(content != NULL);
     fread(content, 1, len, ptr);
+    content[len] = '\0';
     assert(strlen(content) > 0);
     fclose(ptr);
     return content;

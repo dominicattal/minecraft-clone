@@ -4,12 +4,12 @@ Renderer renderer;
 
 void renderer_init(vec2i viewport_size)
 {
-    renderer.shader = shader_init("src/shaders/vert_block.sl", "src/shaders/frag_block.sl");
+    renderer.shader = shader_init("../src/shaders/vert_block.sl", "../src/shaders/frag_block.sl");
     shader_use(renderer.shader);
 
     world_init(renderer.shader, viewport_size);
 
-    Texture tex = texture_init("assets/blockatlas.png");
+    Texture tex = texture_init("../assets/blockatlas.png");
     shader_set_texture(renderer.shader, tex);
     texture_bind(tex);
 }

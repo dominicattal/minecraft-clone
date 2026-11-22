@@ -1,5 +1,4 @@
 #include "camera.h"
-#include <glad.h>
 #define PI 3.141592653589
 
 void camera_init(Camera* camera, f32 aspect_ratio)

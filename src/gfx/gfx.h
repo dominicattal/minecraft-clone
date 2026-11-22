@@ -1,8 +1,8 @@
 #ifndef GFX_H
 #define GFX_H
 
-#include <glad.h>
-#include <glfw.h>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include "../util/type.h"
 
 #endif

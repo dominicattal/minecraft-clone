@@ -1,7 +1,7 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-#include <glad.h>
+#include <glad/glad.h>
 
 typedef GLboolean s2;
 typedef GLbyte    s8;

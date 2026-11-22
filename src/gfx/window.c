@@ -28,7 +28,7 @@ void window_init()
     glfwSetMouseButtonCallback(window.handle, mouse_button_callback);
     glfwSetCursorPosCallback(window.handle, mouse_callback);
 
-    gladLoadGL(glfwGetProcAddress);
+    gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
     glViewport(0, 0, window.size.x, window.size.y);
     glDepthFunc(GL_LESS);
     glEnable(GL_DEPTH_TEST);
